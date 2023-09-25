@@ -1,3 +1,7 @@
+html {
+    height: 100%; 
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -5,7 +9,23 @@ body {
     background-color: #f2f2f2;
 }
 
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
 .container {
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    padding-top: 132px;
+    
+}
+
+.services {
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem;
@@ -31,7 +51,7 @@ header {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 1rem;
+    padding: 1rem 0;
 }
 
 .main-header {
@@ -55,10 +75,10 @@ header {
 }
 
 footer {
+    width: 100%;
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 1rem;
 }
 
 a {
@@ -112,4 +132,20 @@ tr::before {
 
 .telegram {
     color: #0088CC;
+}
+
+.button {
+    width: 130px;
+    margin: 1rem;
+    border-radius: 4px;
+    background: #fff;
+    color: #a8a5a5;
+    font-size: 24px;
+    font-weight: 700;
+    box-shadow: inset 0 0 0 1px #333;
+}
+
+.button:hover {
+    background-color: #a8a5a5;
+    color: #fff;
 }
